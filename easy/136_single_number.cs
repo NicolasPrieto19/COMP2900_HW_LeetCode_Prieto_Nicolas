@@ -5,10 +5,10 @@ public class Solution
 {
     public int SingleNumber(int[] nums)
     {
-        // Diccionario para contar cuantas veces aparece cada numero
+        // diccionario para contar cuantas veces aparece cada numero
         Dictionary<int, int> countMap = new Dictionary<int, int>();
 
-        // Contamos ocurrencias
+        // contamos ocurrencias
         foreach (int num in nums)
         {
             if (countMap.ContainsKey(num))
@@ -21,7 +21,7 @@ public class Solution
             }
         }
 
-        // Buscamos el numero que solo aparece 1 vez
+        // buscamos el numero que solo aparece 1 vez
         foreach (KeyValuePair<int, int> pair in countMap)
         {
             if (pair.Value == 1)
