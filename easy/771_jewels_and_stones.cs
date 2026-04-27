@@ -5,7 +5,7 @@ public class Solution
 {
     public int NumJewelsInStones(string jewels, string stones)
     {
-        // Guardamos los jewels en un HashSet para busqueda rápida
+        // guardamos los jewels en un HashSet para busqueda rapida
         HashSet<char> jewelSet = new HashSet<char>();
 
         foreach (char j in jewels)
@@ -15,10 +15,10 @@ public class Solution
 
         int count = 0;
 
-        // Recorremos todas las stones
+        // recorremos todas las stones
         foreach (char s in stones)
         {
-            // Detecta si la stone esta contenida en Jewels
+            // detecta si la stone esta contenida en jewels
             if (jewelSet.Contains(s))
             {
                 count++;

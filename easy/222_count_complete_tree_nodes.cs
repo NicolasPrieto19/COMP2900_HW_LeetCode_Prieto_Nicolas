@@ -24,14 +24,14 @@ public class Solution
         int leftHeight = GetLeftHeight(root);
         int rightHeight = GetRightHeight(root);
 
-        // Si las alturas son iguales es un arbol perfecto
+        // si las alturas son iguales es un arbol perfecto
         if (leftHeight == rightHeight)
         {
-            //Representacion de la formula 2^h - 1 que sirve para calcular si un arbol es perfecto.
+            // representacion de la formula 2^h - 1 que sirve para calcular si un arbol es perfecto
             return (int)Math.Pow(2, leftHeight) - 1;
         }
 
-        // Cuando un arbol no es perfecto, contamos el nodo actual, mas la suma de los nodos a la izquiera y de la derecha
+        // cuando un arbol no es perfecto, contamos el nodo actual, mas la suma de los nodos a la izquiera y de la derecha
         return 1 + CountNodes(root.left) + CountNodes(root.right);
     }
 

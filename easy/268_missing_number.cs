@@ -1,15 +1,19 @@
 using System;
 
-// Algoritmo que soluciona el problema.
+// algoritmo que soluciona el problema
 public class Solution
 {
     public int MissingNumber(int[] nums)
     {
         int n = nums.Length;
 
+        // se recorre cada numero 
+
         for (int i = 0; i <= n; i++)
         {
             bool found = false;
+
+            // verificamos si el numero se encuentra dentro la posicion del arreglo
 
             for (int j = 0; j < n; j++)
             {
@@ -30,7 +34,7 @@ public class Solution
     }
 }
 
-// Prueba para verificar el funcionamiento de la solucion.
+// prueba para verificar el funcionamiento de la solucion
 class Program
 {
     static void Main(string[] args)
